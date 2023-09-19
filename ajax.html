@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AJAX</title>
+    </head>
+    <body>
+        <h1>AJAX</h1>
+        <article>
+            <h2>
+                Practicaremos la conexión a APIs con la web
+                <a href="https://jsonplaceholder.typicode.com/">{JSON} Placeholder</a>
+            </h2>
+            <p>
+                Este servicio es una API REST falsa para practicar conexiones entre en front y back. Generaremos un
+                CRUD.
+            </p>
+
+            <h3>Un ejemplo básico de consumo sería este</h3>
+            <span>
+                fetch('https://jsonplaceholder.typicode.com/todos/1') <br> .then(response => response.json()) <br> .then(json =>
+                console.log(json))
+            </span>
+        </article>
+        <article>
+            <h2>Objeto XMLHttpRequest</h2>
+            <ol id="xhr"></ol>
+        </article>
+        <article>
+            <h2>Objeto Fetch</h2>
+            <ol id="fetch"></ol>
+        </article>
+    </body>
+    <script src="ajax.js"></script>
+</html>
