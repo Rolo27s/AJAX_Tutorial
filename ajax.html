@@ -19,8 +19,9 @@
 
             <h3>Un ejemplo básico de consumo sería este</h3>
             <span>
-                fetch('https://jsonplaceholder.typicode.com/todos/1') <br> .then(response => response.json()) <br> .then(json =>
-                console.log(json))
+                fetch('https://jsonplaceholder.typicode.com/todos/1') <br />
+                .then(response => response.json()) <br />
+                .then(json => console.log(json))
             </span>
         </article>
         <article>
@@ -28,8 +29,12 @@
             <ol id="xhr"></ol>
         </article>
         <article>
-            <h2>Objeto Fetch</h2>
+            <h2>API Fetch</h2>
             <ol id="fetch"></ol>
+        </article>
+        <article>
+            <h2>API Fetch + Async-Await</h2>
+            <ol id="fetch-async"></ol>
         </article>
     </body>
     <script src="ajax.js"></script>
